@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.container{
+  width:620px;
+  margin:0 auto;
+}
+.form-wrapper{
+  background: #e4e4e4;
+  padding:36px 0 42px;
+}
+.form{
+  display:flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.form__header{
+  color:#3b3b3b;
+  font-size:16px;
+  margin-bottom: 12px;
+}
+.form__input, .form__textarea{
+  width:100%;
+  border-radius: 2px;
+  border:1px solid #bababa;
+  box-sizing: border-box;
+  padding:12px 25px 10px;
+  margin-bottom: 15px;
+}
+.form__textarea{
+  resize:none;
+  height:160px;
+}
+.form__submit{
+  padding:12px 100px;
+  color:white;
+  border:1px solid #bababa;
+  align-self: flex-end;
+  font-size:14px;
+  background:#242424;
+  cursor: pointer;
+}
+.single-post{
+  padding: 40px 0 0;
+  background: white;
+}
+.single-post:hover{
+  background: #f3f3f3;
+}
+.single-post_without-hover:hover{
+  background: white;
+}
+.single-post .container{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-bottom:1px solid #dddddd;
+  padding-bottom: 30px;
+}
+.archive-post{
+  padding-bottom: 55px;
+}
+.archive-post .single-post:nth-last-child(2) .container{
+  border-bottom:0;
+}
+.single-post__paragraph{
+  text-align: left;
+}
+.single-post__header{
+  margin:0;
+  margin-bottom: 25px;
+}
+.single-post__header a{
+  color: #191919;
+  text-decoration: none;
+}
+.single-post__header a:hover{
+  text-decoration:underline;
+}
+.single-post__previous{
+  padding: 15px 32px 13px 58px;
+  background: #f3f3f3;
+  color:#3d3d3d;
+  position: relative;
+  text-decoration: none;
+  margin-bottom: 42px;
+}
+.single-post__previous::after, .single-post__previous::before{
+  content:'';
+  background: #202020;
+  width:10.5px;
+  height:1px;
+  position: absolute;
+  left:23px;
+}
+.single-post__show-more{
+  width:100%;
+  text-align: center;
+  background: #f3f3f3;
+  color:#3d3d3d;
+  border:none;
+  cursor: pointer;
+  padding:16px 0 14px;
+}
+.single-post__previous::after{
+  top:15px;
+  transform-origin: right;
+  transform:rotate(-45deg);
+}
+.single-post__previous::before{
+  bottom:15px;
+  transform-origin: right;
+  transform:rotate(45deg);
+}
